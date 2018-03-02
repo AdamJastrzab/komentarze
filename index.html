@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #wrapper {
+            max-width: 500px;
+        }
+
+        .comments ul {
+            list-style: none;
+            max-width: 500px;
+            padding: 0;
+        }
+
+        .comment-content {
+            background-color: rgb(149, 187, 228);
+            overflow: hidden;
+            margin-bottom: 5px;
+
+        }
+    
+        .comments .comment-content p {
+            margin: 0;   
+        }
+
+        .comments li img {
+        vertical-align: text-top;
+        float: left;
+        margin-right: 15px;
+        }
+
+        .add-comment {
+        clear: both;
+        }
+
+        .add-comment .comment-field {
+            width: 500px;
+            height: 50px;
+        }
+        
+        .add-comment .add-btn {
+       float: right;
+       background-color: #567;
+       border: 0;
+       color: #fff;
+       line-height: 25px;
+        }
+
+        p {
+            word-wrap: break-word;
+        }
+
+    </style>
+    
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <section class="comments" id="comments">
+            <ul class="comment-list">
+                <li class="comment">
+                    <div class="comment-content"><img src="obrazek.jpg" width="40" alt="user avatar"><p><strong>Adam</strong>: Super komentarz</p>
+                    </div>
+                </li>
+                <li class="comment">
+                    <div class="comment-content"><img src="obrazek.jpg" width="40" alt="user avatar"><p><strong>Paweł</strong>: Ekstra komentarz</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="add-comment" class="add-comment">
+            <form>
+                <div>
+                    <label for="comment-content">Tresc</label>
+                    <textarea id="comment-content" class="comment-field"></textarea>
+                </div>
+                <div>
+                    <button type="button" class="add-btn">add comment</button>
+                </div>
+            </form>
+
+        </section>
+
+    </div>
+
+
+<script src="skrypt.js"> </script>
+
+</body>
+</html>
